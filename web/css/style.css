@@ -1,0 +1,363 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* =========================================
+   1. GLOBAL SETTINGS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background:
+        linear-gradient(
+            rgba(5, 10, 30, 0.25),
+            rgba(5, 10, 30, 0.35)
+        ),
+        url('../images/bg.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    color: white;
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   2. LOGIN & REGISTER WRAPPER
+========================================= */
+
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px 15px;
+}
+
+
+/* =========================================
+   3. GLASS LOGIN / REGISTER BOX
+========================================= */
+
+.glass-box {
+    background: rgba(255, 255, 255, 0.10);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    padding: 40px 30px;
+    border-radius: 18px;
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+
+    width: 380px;
+    max-width: 100%;
+
+    text-align: center;
+}
+
+
+/* Login / Register Heading */
+
+.glass-box h1,
+.glass-box h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   4. INPUT FIELDS
+========================================= */
+
+.glass-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    border-radius: 8px;
+
+    color: white;
+    outline: none;
+
+    font-size: 14px;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Placeholder */
+
+.glass-box input::placeholder {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+
+/* Input Focus Effect */
+
+.glass-box input:focus {
+    border-color: #38bdf8;
+
+    background: rgba(255, 255, 255, 0.13);
+
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.20);
+}
+
+
+/* =========================================
+   5. LOGIN / REGISTER BUTTON
+========================================= */
+
+.glass-box button {
+    width: 100%;
+    padding: 12px;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    color: #1e293b;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Button Hover */
+
+.glass-box button:hover {
+    background: #38bdf8;
+    color: #ffffff;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 18px rgba(56, 189, 248, 0.30);
+}
+
+
+/* =========================================
+   6. LINKS
+========================================= */
+
+.glass-box a {
+    color: blue;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.glass-box a:hover {
+    color: #7dd3fc;
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   7. NAVIGATION BAR
+========================================= */
+
+.glass-navbar {
+    background: rgba(5, 10, 25, 0.55);
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    padding: 15px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Navbar Links */
+
+.glass-navbar a {
+    color: white;
+
+    text-decoration: none;
+
+    margin-left: 20px;
+
+    font-weight: 500;
+
+    transition: all 0.3s ease;
+}
+
+.glass-navbar a:hover {
+    color: #38bdf8;
+}
+
+
+/* =========================================
+   8. DASHBOARD WRAPPER
+========================================= */
+
+.dashboard-wrapper {
+    padding: 30px;
+}
+
+
+/* =========================================
+   9. GLASS DASHBOARD PANELS
+========================================= */
+
+.glass-panel {
+    background: rgba(255, 255, 255, 0.10);
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+
+    margin-bottom: 20px;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Panel Hover */
+
+.glass-panel:hover {
+    border-color: rgba(255, 255, 255, 0.40);
+}
+
+
+/* Dashboard Headings */
+
+.glass-panel h1,
+.glass-panel h2,
+.glass-panel h3 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   10. DASHBOARD TABLES
+========================================= */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 15px;
+
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+
+/* Table Header and Cells */
+
+th,
+td {
+    padding: 12px 15px;
+
+    text-align: left;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+
+    color: white;
+}
+
+
+/* Table Header */
+
+th {
+    background: rgba(0, 0, 0, 0.35);
+
+    font-weight: 600;
+}
+
+
+/* Table Row Hover */
+
+tbody tr {
+    transition: background 0.3s ease;
+}
+
+tbody tr:hover {
+    background: rgba(255, 255, 255, 0.10);
+}
+
+
+/* =========================================
+   11. RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 768px) {
+
+    .glass-navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .glass-navbar a {
+        margin: 5px;
+    }
+
+    .dashboard-wrapper {
+        padding: 15px;
+    }
+
+    .glass-panel {
+        padding: 18px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .glass-box {
+        padding: 30px 20px;
+        width: 100%;
+    }
+
+    .glass-box h1,
+    .glass-box h2 {
+        font-size: 22px;
+    }
+
+    .dashboard-wrapper {
+        padding: 12px;
+    }
+}

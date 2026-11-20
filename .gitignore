@@ -1,0 +1,13 @@
+# NetBeans build & private files
+/build/
+/dist/
+/nbproject/private/
+
+# Uploaded banners/notices (keep folder structure, ignore user files)
+/web/uploads/*
+!/web/uploads/.gitkeep
+
+# OS & Log files
+.DS_Store
+Thumbs.db
+*.log
